@@ -1,21 +1,14 @@
 /* IMPOSTAZIONI GENERALI */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
-html{
-  height: 100%;
-}
 
-body{
-  height: 100%;
-
-}
 #background {
-    display: block;
-    width: 100vw;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(/assets/img/sfondo.png);
-    overflow: auto;
+  display: block;
+  /* width: 100vw; */
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/assets/img/sfondo.png);
+  /* overflow: auto; */
 }
 
 h1{
@@ -24,9 +17,18 @@ h1{
     color: white;
 }
 
+h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  line-height: normal;
+}
+
 p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    padding-left: 2%;
+    line-height: normal;
 }
 
 nav {
@@ -34,16 +36,37 @@ nav {
     font-weight: 400;
     color: white;
     text-decoration: none;
+    line-height: 100px;
+    padding-bottom: 3%;
 }
+
+ul,ol{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 10%;
+
+}
+
+a{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+}
+
+span{
+  background-color: rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
 
 /* HEADER */
 
 header{
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2%;
+    margin: 7% 5% 5%;
     background-image: linear-gradient(90deg, #097188, #097188);
+    box-shadow: 1px 6px 14px 0px #000000;
 }
 
 #logo {
@@ -51,26 +74,35 @@ header{
     width: 200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2%;
+    padding: 10%;
 
   }
 
   header h1 {
     display: block;
     text-align: center;
-    padding: 2%;
+    padding-bottom: 5%;
   }
 
   nav a {
+    text-decoration: none;
     display: block;
     list-style-type: none;
     text-align: center;
-    padding: 0.5%;
+    line-height: 0.4em;
     color: white;
   }
 
-  nav {
-    padding-bottom: 2%;
+  nav li {
+    padding: 2% 0;
+    line-height: normal;
+    list-style-type: none;
+    text-align: center;
+    
+  }
+
+  nav ul{
+    padding-left: 0%;
   }
 
 
@@ -86,43 +118,52 @@ main{
 
 .title{
     width: 100%;
-    margin-top: 2%;
+    padding: 7%;
+    line-height: normal;
 }
 h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-align: left;
     font-size: 1.2em;
-    padding-right: 5%;
-    padding-bottom: 2%;
+    padding: 5% auto;
     }
 
 em {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: grey;
-    
     padding-right: 5%;
     
 }
 
-em a{
+.title a{
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     color: grey;
-    text-decoration: none;
+    
     
 }
 
-.content p,li{
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    padding-top: 2%;
-    padding-bottom: 2%;
-
+.content{
+  width: 100%;
 }
 
+.content p{
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+    font-weight: 400;
+    padding: 50% auto;
+}
+.content ul{
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  line-height: normal;
+  font-weight: 400;
+  padding: 20% auto;
+}
 .content strong{
     color:#A73472;
 }
@@ -136,16 +177,52 @@ p a{
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 
+#video {
+  width: 100%;
+  
+}
+
+iframe{
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 20px;
+}
+
+.subscription {
+  background-color: #AAAAAA;
+  width: 95%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription h3 {
+  padding-top: 5%;
+}
+
+.subscription p {
+  padding-top: 5%;
+}
+
 /* TABELLE */
 
 table {
     border: 1px solid #406CC9;
     background-color: #FFFFFF;
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     border-collapse: collapse;
     font-family: 'Poppins', sans-serif;
   }
+
+caption{
+  font-family: 'Poppins', sans-serif;
+  font-size: 500;
+  font-style: italic;
+}
   table td, table th {
     border: 1px solid #AAAAAA;
     padding: 3px 2px;
@@ -174,15 +251,55 @@ table {
  
 
 /* FORM */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+input{
+  border-bottom: 1px dashed black ;
+}
+button{
+  background-color: #406CC9;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: none;
+  margin-left: 5px;
+}
 
 /* ELEMENTI NELL' ASIDE */
+article{
+  background-color: #AAAAAA;
+  width: 95%;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
 
+article h4,p {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.date {
+  padding-left: 50% ;
+}
 /* FOOTER */
 footer{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
-    background-color: white;
+    background-image: linear-gradient(90deg, #2A3438, #005566 );
     box-shadow: 1px 6px 14px 0px #000000;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+  color: #FE05F8;
 }
